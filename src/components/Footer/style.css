@@ -1,0 +1,13 @@
+.footer {
+    text-align: center;
+    color: black;
+    padding: 5px;
+    position: static;
+   
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+}
+

@@ -1,0 +1,11 @@
+#top-nav {
+    background-color:rgb(21, 17, 78);
+ }
+ 
+ .nav-link {
+     color:white;
+     font-family: 'nunito','sans serif';
+     font-size: 20px;
+     font-weight: 800;
+ 
+ }
