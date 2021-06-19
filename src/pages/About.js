@@ -25,7 +25,7 @@ const About = () => {
                     <div className="bio">
                         <h5>Hi! I'm Richard, a web developer based in New Haven, Connecticut.</h5>
                         <p> I have worked in the grocery industry for over twenty years.
-            After numerous injuries and aging gracefully, i've decided to seek a new path.
+            After numerous injuries and aging gracefully, I've decided to seek a new path.
             Web development has always been an interest to me, but the thought of learning many
             languages of technology was overwhelming. So I took the leap and enrolled in boot camp.
             Now, I am here showing off my work.
