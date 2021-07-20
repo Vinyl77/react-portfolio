@@ -1,7 +1,7 @@
 import  React from "react";
 import { Container, Row, Col, Card, CardImg, CardBody, FormGroup, Label, Input } from "reactstrap";
 import Begin from "../assets/shore.jpg";
-import Resume from "../assets/resume.pdf";
+import Resume from "../assets/resume2.pdf";
 import Navigation from "../components/Nav/index"
 import Footer from "../components/Footer/index";
 
