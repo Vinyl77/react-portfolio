@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.be425205.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.6c586dcb.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.6c586dcb.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.e6223d27.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.e6223d27.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.e40c7a9f.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.e40c7a9f.js.map",
     "static/js/2.70fca159.chunk.js": "/react-portfolio/static/js/2.70fca159.chunk.js",
@@ -17,7 +17,7 @@
     "static/media/dashboard.790b67b0.png": "/react-portfolio/static/media/dashboard.790b67b0.png",
     "static/media/employee.cc547368.png": "/react-portfolio/static/media/employee.cc547368.png",
     "static/media/note2.8bfdbf0b.png": "/react-portfolio/static/media/note2.8bfdbf0b.png",
-    "static/media/resume.20511acd.pdf": "/react-portfolio/static/media/resume.20511acd.pdf",
+    "static/media/resume2.3324e415.pdf": "/react-portfolio/static/media/resume2.3324e415.pdf",
     "static/media/richardyvarra.a8040b8d.jpg": "/react-portfolio/static/media/richardyvarra.a8040b8d.jpg",
     "static/media/scheduler.a3f0a164.png": "/react-portfolio/static/media/scheduler.a3f0a164.png",
     "static/media/shore.b81e3de4.jpg": "/react-portfolio/static/media/shore.b81e3de4.jpg",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.e40c7a9f.js",
     "static/js/2.70fca159.chunk.js",
     "static/css/main.be425205.chunk.css",
-    "static/js/main.6c586dcb.chunk.js"
+    "static/js/main.e6223d27.chunk.js"
   ]
 }
