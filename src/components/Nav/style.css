@@ -4,8 +4,11 @@
  
  .nav-link {
      color:white;
-     font-family: 'nunito','sans serif';
+     font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
      font-size: 20px;
      font-weight: 800;
+     font-style: italic;
+     text-transform: uppercase;
+     letter-spacing: 0.05em;
  
  }

@@ -1,0 +1,686 @@
+/* ---------- About page layout ---------- */
+.about-page {
+  background-color: rgb(123, 182, 182);
+  min-height: 100vh;
+  padding-bottom: 200px; /* clear the fixed-bottom footer */
+}
+
+.about-container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  max-width: 1100px;
+}
+
+/* ---------- Header ---------- */
+.about-eyebrow {
+  display: inline-block;
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #da2128;
+  padding: 6px 14px 4px;
+}
+
+.about-headline {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 1;
+  letter-spacing: 0.01em;
+  margin: 18px 0 8px;
+  text-transform: none;
+  text-align: left;
+}
+
+.about-headline .accent {
+  color: #da2128;
+}
+
+.about-subhead {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #1a1a1a;
+  margin-bottom: 40px;
+}
+
+.about-subhead-link {
+  color: #da2128;
+  font-weight: 900;
+  font-style: italic;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.about-subhead-link:hover {
+  color: #da2128;
+  border-bottom-color: #da2128;
+}
+
+.about-subhead-divider {
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: 900;
+  font-style: italic;
+  color: #0e0e0e;
+  opacity: 0.4;
+}
+
+.about-bio a {
+  color: #da2128;
+  font-weight: 900;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.about-bio a:hover {
+  border-bottom-color: #da2128;
+}
+
+/* ---------- Profile + bio block ---------- */
+.about-profile-wrapper {
+  position: relative;
+  border-left: 6px solid #da2128;
+  padding-left: 18px;
+  margin: 0 auto;
+}
+
+.about-profile-frame {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+}
+
+.about-profile-frame::before {
+  content: '';
+  position: absolute;
+  inset: -10px;
+  border-radius: 50%;
+  border: 3px solid #da2128;
+  pointer-events: none;
+}
+
+.about-profile-pic {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  display: block;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.about-bio {
+  padding-top: 4px;
+}
+
+.about-bio h2 {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 28px;
+  letter-spacing: 0.04em;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.about-bio p {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+  letter-spacing: 0.01em;
+}
+
+/* ---------- Stats strip ---------- */
+.about-stats {
+  margin-top: 40px;
+  margin-bottom: 64px;
+  background-color: #0e0e0e;
+  color: #fff;
+  border-radius: 6px;
+  padding: 24px 16px;
+}
+
+.about-stat {
+  text-align: center;
+  padding: 8px 12px;
+}
+
+.about-stat-value {
+  display: block;
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 32px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.about-stat-value .accent {
+  color: #da2128;
+}
+
+.about-stat-label {
+  display: block;
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c9c9c9;
+  margin-top: 6px;
+}
+
+/* ---------- Contact list under photo ---------- */
+.about-contact {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about-contact a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0e0e0e;
+  text-decoration: none;
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  word-break: break-all;
+  transition: color 0.15s ease;
+}
+
+.about-contact a:hover {
+  color: #da2128;
+}
+
+.about-contact svg {
+  flex-shrink: 0;
+  width: 18px !important;
+  height: 18px !important;
+}
+
+/* ---------- Generic section header ---------- */
+.about-section {
+  margin-top: 64px;
+}
+
+.about-section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.about-section-header h2 {
+  margin: 0;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: clamp(22px, 3vw, 32px);
+  letter-spacing: 0.04em;
+}
+
+.about-section-header::after {
+  content: '';
+  flex: 1;
+  height: 4px;
+  background-color: #0e0e0e;
+}
+
+/* ---------- Education card ---------- */
+.education-card {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 28px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-left: 6px solid #da2128;
+}
+
+.education-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.education-school {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  margin: 0 0 4px;
+  text-transform: none;
+  text-align: left;
+}
+
+.education-program {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #444;
+  margin: 0;
+}
+
+.education-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+}
+
+.education-date {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 16px;
+  color: #0e0e0e;
+}
+
+.education-gpa {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #444;
+}
+
+.education-gpa strong {
+  color: #da2128;
+  font-weight: 900;
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+.education-location {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #666;
+  margin: 8px 0 24px;
+}
+
+.education-coursework {
+  border-top: 2px solid rgba(14, 14, 14, 0.08);
+  padding-top: 20px;
+}
+
+.education-coursework-label {
+  display: block;
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #0e0e0e;
+  margin-bottom: 12px;
+}
+
+/* ---------- Certifications timeline ---------- */
+.cert-timeline {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 28px 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.cert-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 2px solid rgba(14, 14, 14, 0.08);
+}
+
+.cert-row:last-child {
+  border-bottom: none;
+  padding-bottom: 4px;
+}
+
+.cert-row:first-child {
+  padding-top: 4px;
+}
+
+.cert-year {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  color: #da2128;
+  line-height: 1;
+}
+
+.cert-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  font-size: 17px;
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.cert-name {
+  font-weight: 700;
+  color: #0e0e0e;
+  flex: 1;
+}
+
+.cert-issuer {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #0e0e0e;
+  padding: 4px 10px 2px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+/* ---------- Press & Media ---------- */
+.press-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.press-item {
+  display: flex;
+}
+
+.press-link {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 24px 26px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-left: 6px solid #da2128;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.press-link:hover,
+.press-link:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.2);
+}
+
+.press-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.press-type {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #da2128;
+  padding: 4px 10px 2px;
+  border-radius: 999px;
+}
+
+.press-date {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.press-outlet {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 24px;
+  letter-spacing: 0.01em;
+  color: #0e0e0e;
+  margin-bottom: 8px;
+}
+
+.press-title {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.45;
+  color: #1a1a1a;
+  margin: 0 0 8px;
+}
+
+.press-note {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 14px;
+}
+
+.press-cta {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #da2128;
+  padding-top: 8px;
+  border-top: 2px solid rgba(14, 14, 14, 0.08);
+  transition: gap 0.2s ease;
+}
+
+.press-link:hover .press-cta,
+.press-link:focus-visible .press-cta {
+  gap: 14px;
+}
+
+.skill-group {
+  margin-bottom: 28px;
+}
+
+.skill-group-title {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #0e0e0e;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid rgba(14, 14, 14, 0.2);
+}
+
+.skill-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-chip {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #0e0e0e;
+  border: 2px solid #0e0e0e;
+  border-radius: 999px;
+  padding: 6px 14px 4px;
+  transition: transform 0.15s ease, background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.skill-chip:hover {
+  background-color: #da2128;
+  color: #fff;
+  border-color: #da2128;
+  transform: translateY(-2px);
+}
+
+/* ---------- CTA ---------- */
+.about-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 48px;
+  justify-content: center;
+}
+
+.about-cta-btn {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  border-radius: 4px;
+  border: 2px solid #0e0e0e;
+  text-decoration: none;
+  transition: transform 0.15s ease, background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.about-cta-btn--primary {
+  background-color: #da2128;
+  color: #fff;
+  border-color: #da2128;
+}
+
+.about-cta-btn--primary:hover {
+  background-color: #0e0e0e;
+  border-color: #0e0e0e;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.about-cta-btn--secondary {
+  background-color: transparent;
+  color: #0e0e0e;
+}
+
+.about-cta-btn--secondary:hover {
+  background-color: #0e0e0e;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .about-container {
+    padding-top: 32px;
+  }
+
+  .about-profile-wrapper {
+    border-left: none;
+    border-top: 6px solid #da2128;
+    padding-left: 0;
+    padding-top: 18px;
+    margin-top: 24px;
+  }
+
+  .about-bio h2 {
+    text-align: center;
+  }
+
+  .about-stat {
+    padding: 12px 0;
+  }
+
+  .about-contact {
+    align-items: center;
+  }
+
+  .about-contact a {
+    justify-content: center;
+  }
+
+  .education-card-header {
+    flex-direction: column;
+  }
+
+  .education-meta {
+    align-items: flex-start;
+  }
+
+  .cert-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .cert-year {
+    font-size: 28px;
+  }
+
+  .cert-item {
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+
+  .press-list {
+    grid-template-columns: 1fr;
+  }
+
+  .press-outlet {
+    font-size: 20px;
+  }
+}
