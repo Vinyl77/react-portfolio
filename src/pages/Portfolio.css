@@ -1,0 +1,319 @@
+/* ---------- Page layout ---------- */
+.portfolio-page {
+  background-color: rgb(123, 182, 182);
+  min-height: 100vh;
+  padding-bottom: 200px;
+}
+
+.portfolio-container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  max-width: 1200px;
+}
+
+/* ---------- Header ---------- */
+.portfolio-header {
+  margin-bottom: 40px;
+}
+
+.portfolio-eyebrow {
+  display: inline-block;
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #da2128;
+  padding: 6px 14px 4px;
+}
+
+.portfolio-headline {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 1;
+  letter-spacing: 0.01em;
+  margin: 18px 0 8px;
+  text-transform: none;
+  text-align: left;
+}
+
+.portfolio-headline .accent {
+  color: #da2128;
+}
+
+.portfolio-tagline {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #1a1a1a;
+  margin-bottom: 0;
+}
+
+/* ---------- Hero screenshot ---------- */
+.portfolio-shot-link {
+  display: block;
+  text-decoration: none;
+}
+
+.portfolio-shot {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 3px solid #0e0e0e;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  background-color: #0e0e0e;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.portfolio-shot:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.portfolio-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease, opacity 0.25s ease;
+}
+
+.portfolio-shot:hover img {
+  transform: scale(1.02);
+  opacity: 0.85;
+}
+
+.portfolio-shot-overlay {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #da2128;
+  color: #fff;
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 10px 18px 8px;
+  border-radius: 4px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+.portfolio-shot:hover .portfolio-shot-overlay,
+.portfolio-shot-link:focus-visible .portfolio-shot-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---------- Info section ---------- */
+.portfolio-info {
+  margin-top: 56px;
+}
+
+.portfolio-meta {
+  background-color: #0e0e0e;
+  color: #fff;
+  border-radius: 6px;
+  padding: 24px 28px;
+  border-top: 6px solid #da2128;
+  position: sticky;
+  top: 24px;
+}
+
+.portfolio-meta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-meta-row:first-child {
+  padding-top: 4px;
+}
+
+.portfolio-meta-label {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c9c9c9;
+}
+
+.portfolio-meta-value {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.portfolio-visit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 18px;
+  background-color: #da2128;
+  color: #fff;
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 2px solid #da2128;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.portfolio-visit-btn:hover,
+.portfolio-visit-btn:focus-visible {
+  background-color: #fff;
+  color: #da2128;
+  transform: translateY(-2px);
+}
+
+/* ---------- About content ---------- */
+.portfolio-about {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 32px 36px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.portfolio-section-header--secondary {
+  margin-top: 32px;
+}
+
+.portfolio-section-header h2 {
+  margin: 0;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: clamp(22px, 2.4vw, 28px);
+  letter-spacing: 0.04em;
+}
+
+.portfolio-section-header::after {
+  content: '';
+  flex: 1;
+  height: 4px;
+  background-color: #0e0e0e;
+}
+
+.portfolio-about p {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #1a1a1a;
+  margin-bottom: 14px;
+  letter-spacing: 0.01em;
+}
+
+.portfolio-about a {
+  color: #da2128;
+  font-weight: 900;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+.portfolio-about a:hover {
+  border-bottom-color: #da2128;
+}
+
+/* ---------- Bottom CTA ---------- */
+.portfolio-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 56px;
+  justify-content: center;
+}
+
+.portfolio-cta-btn {
+  font-family: 'Futura', 'Futura-Bold', 'Jost', 'Trebuchet MS', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 12px 28px;
+  border-radius: 4px;
+  border: 2px solid #0e0e0e;
+  text-decoration: none;
+  transition: transform 0.15s ease, background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.portfolio-cta-btn--primary {
+  background-color: #da2128;
+  color: #fff;
+  border-color: #da2128;
+}
+
+.portfolio-cta-btn--primary:hover {
+  background-color: #0e0e0e;
+  border-color: #0e0e0e;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.portfolio-cta-btn--secondary {
+  background-color: transparent;
+  color: #0e0e0e;
+}
+
+.portfolio-cta-btn--secondary:hover {
+  background-color: #0e0e0e;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .portfolio-container {
+    padding-top: 32px;
+  }
+
+  .portfolio-meta {
+    position: static;
+    margin-bottom: 24px;
+  }
+
+  .portfolio-about {
+    padding: 24px 22px;
+  }
+
+  .portfolio-shot-overlay {
+    bottom: 12px;
+    right: 12px;
+    font-size: 12px;
+    padding: 8px 14px 6px;
+  }
+}
